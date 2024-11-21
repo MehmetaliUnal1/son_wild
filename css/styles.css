@@ -1,0 +1,187 @@
+/*
+Author: Mehmet Ali Unal
+File Name: styles.css
+Date: 08/28/2024
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, img, h1, h3 {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Style rules for body and images */
+body {
+    background-color: #f6eee4;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Style rules for navigation area */
+nav {
+    background-color: #2a1f14;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    font-size: 1.5em;
+    font-family: Geneva, Arial, sans-serif;
+    font-weight: bold;
+}
+
+nav li a {
+    display: block;
+    color: #f6eee4;
+    padding: 0.5em 2em;
+    text-decoration: none;
+}
+
+/* Style rules for main content */
+main {
+    padding: 2%;
+    font-family: Verdana, Arial, sans-serif;
+}
+
+main p {
+    font-size: 1.25em;
+}
+
+main h3 {
+    padding-top: 2%;
+}
+
+main ul {
+    list-style-type: square;
+}
+
+/* Style rules for class and id selectors */
+.link {
+    color: #4d3319;
+    text-decoration: none;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.action {
+    font-size: 1.75em;
+    font-weight: bold;
+    text-align: center;
+}
+
+#contact {
+    text-align: center;
+}
+
+/* Style rules for footer content */
+footer {
+    text-align: center;
+    font-size: 0.85em;
+    background-color: #2a1f14;
+    color: #f6eee4;
+    padding: 1% 0;
+}
+
+footer a {
+    color: #f3e6d8;
+    text-decoration: none;
+}
+
+/* Style rules for mobile viewport */
+.mobile {
+    display: none;
+}
+
+.tab-desk {
+    display: block;
+}
+
+@media only screen and (max-width: 600px) {
+    .mobile {
+        display: block;
+        text-align: center;
+    }
+    
+    .mobile h1, .mobile h3 {
+        padding: 2%;
+    }
+    
+    .tab-desk {
+        display: none;
+    }
+}
+
+.mobile h1 {
+    font-family: 'Emblema One', cursive;
+}
+
+.mobile h3 {
+    font-family: 'Lora', serif;
+}
+
+#questions {
+    margin-top: 1em;
+    font-size: 1em;
+}
+
+#answer {
+    background-color: #f9f9f9;
+    padding: 1em;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+/* Social Media Icon Styles */
+.social img {
+    display: inline-block;
+    padding: 4%;
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    /* Tablet Viewport: Footer Area Styles */
+    footer {
+        overflow: auto;
+    }
+
+    .copyright {
+        float: left;
+        width: 65%;
+    }
+
+    .social {
+        float: right;
+        width: 25%;
+    }
+}
+
+/* New Styles Added */
+
+/* Welcome Class */
+.welcome {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #f6eee4;
+    text-align: center;
+}
+
+/* Display-1 Class */
+.display-1 {
+    font-size: 4em;
+    font-weight: bold;
+}
+
+/* Background Brown Class */
+.bg-brown {
+    background-color: #2a1f14;
+}
